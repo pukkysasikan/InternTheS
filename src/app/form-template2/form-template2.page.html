@@ -1,0 +1,23 @@
+<ion-content mode="ios">
+    <ng-container *ngIf="data">
+      <ion-list>
+        <form [formGroup]="fg" (ngSubmit)="onSave()">
+        <ion-item lines="full" color="tertiary">
+          <ion-label position="stacked">PromptpayID</ion-label>
+          <ion-input type="text" [value]="data.prompt" readonly></ion-input>
+        </ion-item>
+        <ion-item lines="full" color="tertiary">
+          <ion-label position="stacked">Amount
+          </ion-label>
+          <ion-input type="tel" [value]="data.amount" readonly></ion-input>
+        </ion-item>
+        <ion-item lines="full" color="tertiary">
+          <ion-label position="stacked">ชื่อผู้รับ
+          </ion-label>
+          <ion-input type="tel" [value]="data.recipient" readonly></ion-input>
+        </ion-item>
+        <ion-button color="danger" class="ion-no-margin" expand="full" type="submit">OK</ion-button>
+        </form>
+      </ion-list>
+    </ng-container>
+</ion-content>

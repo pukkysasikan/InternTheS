@@ -1,0 +1,20 @@
+<ion-content mode="ios">
+  <ion-list>
+    <form [formGroup]="fg" (ngSubmit)="onSave()">
+      <ion-item lines="full" color="tertiary">
+        <ion-label position="stacked">ชื่อเจ้าของบัญชี</ion-label>
+        <ion-input type="text" formControlName="name"></ion-input>
+      </ion-item>
+      <ion-item lines="full" color="tertiary">
+        <ion-label position="stacked">PromptpayID</ion-label>
+        <ion-input type="tel" formControlName="prompt"></ion-input>
+      </ion-item>
+      <ion-footer class="ion-no-border">
+        <ion-button color="danger" class="ion-no-margin" expand="full" type="submit" (click)="onSave()">
+          บันทึกข้อมูล
+        </ion-button>
+      </ion-footer>
+    </form>
+  </ion-list>
+
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-content mode="ios">
+
+  <ion-list lines="none">
+      <ion-list-header lines="none" mode="md">
+          <ion-label>เลือกรายการ</ion-label>
+      </ion-list-header>
+      <ion-item button class="ion-margin-bottom" color="tertiary" *ngFor="let item of data" (click)="onSelectItem(item)"
+       [routerLink]="['/form-template']">
+          <ion-avatar slot="start">
+              <img src="assets/imgs/defaultshop.png" />
+          </ion-avatar>
+          <ion-label>
+              <b> {{ item.prompt }} </b>
+              <ion-text color="medium">
+                  <h3> {{ item.name }} </h3>
+              </ion-text>
+          </ion-label>
+      </ion-item>
+  </ion-list>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-button color="danger" class="ion-no-margin" expand="full" type="submit" [routerLink]="['/addaccount']">เพิ่มบัญชี
+  </ion-button>
+</ion-footer>

@@ -1,0 +1,129 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-icon name="chevron-back-outline" routerLink="/home"></ion-icon>
+    <ion-title>SelectCar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item color="light">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-label >
+            <h2><b>ขอนแก่น-สนามบิน</b></h2>
+          </ion-label>
+          <ion-label >
+            <small>30 พ.ค.,12.00 น.- 1 มิ.ย.,12.00 น.</small>
+          </ion-label>
+        </ion-col>
+        <ion-col size="6" class="ion-no-padding ion-text-right">
+          <ion-text>
+            <ion-icon name="pencil-outline"></ion-icon>
+            แก้ไขข้อมูล
+          </ion-text>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-item>
+
+  <ion-card>
+    <ion-card-content color="tertiary">
+      <div class="ion-no-margin">
+        <ion-card color="tertiary" class="ion-no-padding border-radius">
+
+          <ion-slides>
+            <ion-slide>
+              <div class="slide">
+                <img src="https://talks2bkk.com/wp-content/uploads/2020/06/unnamed.jpg">
+              </div>
+            </ion-slide>
+            
+             <ion-slide>
+            <img src="https://talks2bkk.com/wp-content/uploads/2020/06/unnamed-1.jpg">
+          </ion-slide>
+          </ion-slides>
+
+          <ion-grid>
+            <ion-row>
+              <ion-col size="6">
+                <ion-label >
+                  <h2><b>Mr. Bean’s Mini car</b></h2>
+                </ion-label>
+              </ion-col>
+              <ion-col size="6">
+                <ion-label>
+                  <h3 class="ion-text-right">
+                    <ion-text color="danger">
+                      <ion-text color="danger" class="line-through">
+                        3,000
+                      </ion-text>
+                      <small>&nbsp;THB<span>/วัน</span></small>
+                      <h2><b>2,000</b><small>&nbsp;THB</small><span>/วัน</span></h2>
+                    </ion-text>
+                  </h3>
+                </ion-label>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-item class="ion-no-margin" color="danger" id="rcorners5">
+                  <h5 color="tertiary">4.9/5</h5></ion-item>
+              </ion-col>
+            </ion-row>
+
+            <ion-row>
+              <ion-col size="6">
+                <ion-label >
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                </ion-label>
+                ดีมาก
+              </ion-col>
+              <ion-col class="ion-no-padding ion-text-right">
+                <ion-label color="medium">
+                  <h3>
+                    <span>ยอดรวม 4,000<small>&nbsp;THB</small></span>
+                  </h3>
+                </ion-label>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <br>
+          <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/detail-car">เลือก</ion-button>
+
+        </ion-card>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-button  color="tertiary" expand="full" ><!-- แถบด้านล่าง -->
+    <ion-tabs >
+      <ion-tab-bar slot="bottom" color="tertiary">
+        <ion-tab-button  routerLink="/home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>หน้าหลัก</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button routerLink="/car-promotion">
+          <ion-icon name="pricetag"></ion-icon>
+          <ion-label>ดีล</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button  routerLink="/my-booking">
+          <ion-icon name="car"></ion-icon>
+          <ion-label>การจองของฉัน</ion-label>
+        </ion-tab-button>
+        <ion-tab-button  routerLink="/my-account">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>บัญชี</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    <!-- ******************************** --></ion-button>
+</ion-footer>

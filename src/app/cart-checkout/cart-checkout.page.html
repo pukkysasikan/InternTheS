@@ -1,0 +1,172 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-icon name="chevron-back-outline" routerLink="/cart-edit"></ion-icon>
+    <ion-title>CartCheckout</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="transaction" mode="ios">
+  <ion-card>
+    <ion-card-content color="tertiary">
+      <div >
+        <ion-card color="tertiary" class="ion-no-padding border-radius">
+      <ion-list class="ion-margin-top" lines="full">
+        <ion-item color="tertiary" class="ion-padding-vertical">
+          <ion-grid class="ion-no-padding text-hidden">
+            <ion-label class="ion-padding-start">
+              <h3><b>รายการที่เช่า (1 รายการ)</b></h3>
+            </ion-label>
+            <ion-row class="ion-no-padding ion-align-items-left ion-padding-top">
+              <ion-col justify-content-center align-items-left size="auto"
+                class="ion-text-center ion-padding-start">
+                <img class="logo-l" src="assets/imgs/defaultshop.png">
+              </ion-col>
+    
+              <ion-col class="ion-padding-start">
+                <ion-row>
+                  <ion-col size="6">
+                    <ion-label>
+                      <h3>X1 Mr. Bean’s Mini car</h3>
+                    </ion-label>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-label>
+                      <h3 class="ion-text-right">
+                        <ion-text color="danger" class="line-through">
+                          6,000
+                        </ion-text>
+                        <small>&nbsp;THB</small>
+                      </h3>
+                    </ion-label>
+                  </ion-col>
+                </ion-row>
+    
+                <ion-row>
+                  <ion-col size="6">
+                    <ion-label color="danger">
+                      <small>30 พ.ค.,12.00 น.- 1 มิ.ย.,12.00 น.</small>
+                    </ion-label>
+                  </ion-col>
+                  <ion-col size="6">
+                    <ion-label>
+                      <h3 class="ion-text-right">
+                        <ion-text>
+                          4,000
+                        </ion-text>
+                        <small>&nbsp;THB</small>
+                      </h3>
+                    </ion-label>
+                  </ion-col>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-item>
+      </ion-list>
+
+      <ion-item class="ion-no-padding" color="tertiary" lines="none">
+        <ion-grid class="ion-padding">
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <ion-label>
+                <h3 class="line-height2"><b>รายละเอียดการจ่ายเงิน</b></h3>
+              </ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <ion-label color="medium">
+                <h3 class="line-height2">รวมค่าสินค้า</h3>
+              </ion-label>
+            </ion-col>
+            <ion-col class="ion-no-padding ion-text-right">
+              <ion-label color="medium">
+                <h3>4,000
+                  <small>THB</small>
+                </h3>
+              </ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <ion-label color="medium">
+                <h3 class="line-height2">ค่าจัดส่ง</h3>
+              </ion-label>
+            </ion-col>
+            <ion-col class="ion-no-padding ion-text-right">
+              <ion-label color="medium">
+                <h3>0
+                  <small>THB</small>
+                </h3>
+              </ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <ion-label color="medium">
+                <h3 class="line-height2">ส่วนลด</h3>
+              </ion-label>
+            </ion-col>
+            <ion-col class="ion-no-padding ion-text-right">
+              <ion-label color="medium">
+                <h3>2,000
+                  <small>THB</small>
+                </h3>
+              </ion-label>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="ion-no-padding">
+              <ion-label color="medium">
+                <h3 class="line-height2">ราคารวมทั้งหมด</h3>
+              </ion-label>
+            </ion-col>
+            <ion-col class="ion-no-padding ion-text-right">
+              <ion-text color="danger">
+                <ion-label>
+                  <h3>
+                    <b>4,000
+                      <small>THB</small>
+                    </b>
+                  </h3>
+                </ion-label>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+          <ion-button color="danger" class="ion-no-margin" expand="full" routerLink="/cart-dialog">ดำเนินการชำระเงิน</ion-button>
+
+        </ion-card>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer class="ion-no-border">
+  <ion-button  color="tertiary" expand="full" ><!-- แถบด้านล่าง -->
+    <ion-tabs >
+      <ion-tab-bar slot="bottom" color="tertiary">
+        <ion-tab-button  routerLink="/home">
+          <ion-icon name="home"></ion-icon>
+          <ion-label>หน้าหลัก</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button routerLink="/car-promotion">
+          <ion-icon name="pricetag"></ion-icon>
+          <ion-label>ดีล</ion-label>
+        </ion-tab-button>
+  
+        <ion-tab-button  routerLink="/my-booking">
+          <ion-icon name="car"></ion-icon>
+          <ion-label>การจองของฉัน</ion-label>
+        </ion-tab-button>
+        <ion-tab-button  routerLink="/my-account">
+          <ion-icon name="person"></ion-icon>
+          <ion-label>บัญชี</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+    <!-- ******************************** --></ion-button>
+</ion-footer>

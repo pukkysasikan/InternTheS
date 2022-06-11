@@ -333,6 +333,22 @@ a.link-medium{
     border-radius: 10px;
 }
 
+ion-accordion-group{
+    ion-accordion {
+        .ion-accordion-toggle-icon {
+            display: none;
+        }
+    }
+}
+
+ion-toggle{
+    --handle-height: 20px;
+    --handle-width: 15px;
+    height: 20px;
+    width: 30px;
+}
+
+
 // Fonts
 // --------------------------------------------------
 @font-face {

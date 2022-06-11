@@ -9,9 +9,10 @@ import { AlertController } from '@ionic/angular';
 })
 export class AirTicketPage implements OnInit {
   public segment: string = 'one';
-  public date0: any;
-  public date1: any;
-  public date2: any;
+  private today = new Date();
+  public date0: any = format(this.today, 'dd/MM/yyyy');
+  public date1: any = format(this.today, 'dd/MM/yyyy');
+  public date2: any = format(this.today, 'dd/MM/yyyy');
 
   public people0: number = 0;
   public people1: number = 0;

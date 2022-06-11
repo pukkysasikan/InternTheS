@@ -39,10 +39,6 @@ const routes: Routes = [
     loadChildren: () => import('./select-hotel/select-hotel.module').then( m => m.SelectHotelPageModule)
   },
   {
-    path: 'hotel-booking-form',
-    loadChildren: () => import('./hotel-booking-form/hotel-booking-form.module').then( m => m.HotelBookingFormPageModule)
-  },
-  {
     path: 'air-ticket',
     loadChildren: () => import('./air-ticket/air-ticket.module').then( m => m.AirTicketPageModule)
   },
@@ -77,6 +73,10 @@ const routes: Routes = [
   {
     path: 'tour-form',
     loadChildren: () => import('./tour-form/tour-form.module').then( m => m.TourFormPageModule)
+  },
+  {
+    path: 'hotel-check-in',
+    loadChildren: () => import('./hotel-check-in/hotel-check-in.module').then( m => m.HotelCheckInPageModule)
   },
 
 ];

@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { format, parseISO, getDate, getMonth, getYear } from 'date-fns';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
+  selector: 'app-hotel-check-in',
+  templateUrl: './hotel-check-in.page.html',
+  styleUrls: ['./hotel-check-in.page.scss'],
 })
-export class HomePage {
+export class HotelCheckInPage {
   
   public driver: string = "no";
   private today = new Date();

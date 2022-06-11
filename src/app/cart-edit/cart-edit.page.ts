@@ -7,7 +7,9 @@ import { format, parseISO, getDate, getMonth, getYear } from 'date-fns';
   styleUrls: ['./cart-edit.page.scss'],
 })
 export class CartEditPage implements OnInit {
-  public date0: any;
+
+  private today = new Date();
+  public date0: any = format(this.today, 'dd/MM/yyyy');
   constructor() { }
 
   ngOnInit() {

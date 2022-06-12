@@ -35,90 +35,36 @@ export class AirTicketPage implements OnInit {
     this.date2 = format(parseISO(value), 'dd/MM/yyyy');
   }
 
-  async p0Prompt(event) {
-    if (event.target.checked) {
-      this.people0 = 0;
-    } else {
-      const alert = await this.alertController.create({
-        cssClass: 'my-custom-class',
-        header: 'กรอกจำนวนคน',
-        mode: 'ios',
-        inputs: [
-          {
-            name: 'people',
-            type: 'number',
-            placeholder: 'จำนวนคน',
-          },
-        ],
-        buttons: [
-          {
-            text: 'ยืนยัน',
-            handler: (value) => {
-              this.people0 = value.people;
-            },
-          },
-        ],
-      });
-
-      await alert.present();
+  incrementPeople0() {
+    if (this.people0 < 5) {
+      this.people0++;
+    }
+  }
+  decrementPeople0() {
+    if (this.people0 > 0) {
+      this.people0--;
     }
   }
 
-  async p1Prompt(event) {
-    if (event.target.checked) {
-      this.people1 = 0;
-    } else {
-      const alert = await this.alertController.create({
-        cssClass: 'my-custom-class',
-        header: 'กรอกจำนวนคน',
-        mode: 'ios',
-        inputs: [
-          {
-            name: 'people',
-            type: 'number',
-            placeholder: 'จำนวนคน',
-          },
-        ],
-        buttons: [
-          {
-            text: 'ยืนยัน',
-            handler: (value) => {
-              this.people1 = value.people;
-            },
-          },
-        ],
-      });
-
-      await alert.present();
+  incrementPeople1() {
+    if (this.people1 < 5) {
+      this.people1++;
+    }
+  }
+  decrementPeople1() {
+    if (this.people1 > 0) {
+      this.people1--;
     }
   }
 
-  async p2Prompt(event) {
-    if (event.target.checked) {
-      this.people2 = 0;
-    }else{
-      const alert = await this.alertController.create({
-        cssClass: 'my-custom-class',
-        header: 'กรอกจำนวนคน',
-        mode: 'ios',
-        inputs: [
-          {
-            name: 'people',
-            type: 'number',
-            placeholder: 'จำนวนคน',
-          },
-        ],
-        buttons: [
-          {
-            text: 'ยืนยัน',
-            handler: (value) => {
-              this.people2 = value.people;
-            },
-          },
-        ],
-      });
-  
-      await alert.present();
+  incrementPeople2() {
+    if (this.people2 < this.people0) {
+      this.people2++;
+    }
+  }
+  decrementPeople2() {
+    if (this.people2 > 0) {
+      this.people2--;
     }
   }
 }

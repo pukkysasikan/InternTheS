@@ -333,13 +333,7 @@ a.link-medium{
     border-radius: 10px;
 }
 
-ion-accordion-group{
-    ion-accordion {
-        .ion-accordion-toggle-icon {
-            display: none;
-        }
-    }
-}
+
 
 ion-toggle{
     --handle-height: 20px;
@@ -367,6 +361,14 @@ ion-toggle{
 //   * {
 //     font-family: 'Kanit', sans-serif;
 //   }
+
+ion-accordion-group{
+    ion-accordion {
+        .ion-accordion-toggle-icon {
+            display: none;
+        }
+    }
+}
 
 $font-family-base: "Kanit";
 $font-family-ios-base: "Kanit";

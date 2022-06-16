@@ -1,6 +1,6 @@
 
 ## Demo Link
-- Firebase : https://webapp-test-react.web.app
+- Firebase : https://aiz-app-demo.web.app
 - Azure : http://demo-prototype-1.azurewebsites.net/
 #
 <div>
